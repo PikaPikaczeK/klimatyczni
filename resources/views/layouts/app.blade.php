@@ -28,6 +28,7 @@
       @include('sections.quote')
       @include('sections.services')
       @include('sections.reviews')
+      @include('sections.carousel')
 
       @include('sections.footer')
     </div>
