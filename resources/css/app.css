@@ -2,3 +2,30 @@
 @source "../../app/**/*.php";
 @source "../**/*.blade.php";
 @source "../**/*.js";
+
+@theme {
+  /* Tła sekcji */
+  --color-hero-dark:      #0b1622; /* Ciemnogranatowe tło sekcji Hero */
+  --color-hero-overlay:   #15293d; /* Jaśniejsza poświata/gradient w Hero */
+  --color-body-light:     #f4f8fb; /* Chłodne, sterylne tło dolnej sekcji */
+  --color-card-light:     #ffffff; /* Czysta biel kafelków ofertowych */
+  --color-card-border:    #e1ecf4; /* Bardzo subtelna ramka kart */
+
+  /* Kolory akcentujące (przyciski, ikony, poświaty nawiewu) */
+  --color-accent-teal:    #2dd4bf; /* Miętowy błękit przycisku PROJEKTUJ KLIMAT */
+  --color-accent-cyan:    #38bdf8; /* Lodowy błękit nawiewu z kasetonu */
+  --color-glow-blue:      rgba(56, 189, 248, 0.25); /* Poświata pod kasetonem */
+
+  /* Kolory tekstów */
+  --color-txt-hero-title: #ffffff; /* Główny nagłówek na ciemnym */
+  --color-txt-hero-sub:   #b8cddc; /* Podtytuł na ciemnym tle */
+  --color-txt-dark-title: #0f1e2e; /* Ciemne nagłówki na jasnym tle */
+  --color-txt-dark-body:  #536b82; /* Szaro-niebieski tekst opisów */
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+  }
+}
