@@ -29,6 +29,7 @@
       @include('sections.services')
       @include('sections.reviews')
       @include('sections.carousel')
+      @include('sections.beforeafter')
 
       @include('sections.footer')
     </div>
